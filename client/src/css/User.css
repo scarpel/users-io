@@ -1,0 +1,282 @@
+.user{
+    position: relative; 
+    width: 100%;
+    min-height: 100vh;
+
+    background-color: var(--background-main-color);
+    box-sizing: border-box;
+    padding: 25px 0;
+}
+
+.user #header{
+    width: 90%;
+    max-width: 900px;
+    padding: 20px 10px;
+    padding-left: 20px;
+    margin: auto;
+}
+
+.user .spinner{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+
+    transform: translate(-50%,-50%);
+}
+
+.box{
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.top .box:hover{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition-duration: 0.5s;
+}
+
+.top .user-card.box:hover::after{
+    box-shadow: 0;
+    animation: none;
+}
+
+.top , .bottom {
+    max-width: 950px;
+    min-width: 350px;
+}
+
+.top *, .bottom *{
+    position: relative;
+    z-index: 5;
+}
+
+.top{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 80%;
+    padding: 20px 0;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.top .user-card{
+    animation: pop 0.65s ease-out;
+    transform-origin: center;
+}
+
+.top .git-card{
+    opacity: 0;
+    animation: pop 0.65s ease-out 0.5s forwards;
+    transform-origin: center;
+}
+
+.top .user-card, .top .git-card{
+    display: flex;
+    flex-flow: row;
+    justify-content: left;
+
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    width: auto;
+}
+
+.user .user-card .social{
+    display: flex;
+
+    font-size: 1.4em;
+    gap: 5px;
+    color: black;
+    text-transform: none;
+}
+
+.user .user-card .social div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color:rgb(47, 218, 161);
+
+    width: 25px;
+    height: 25px;
+}
+
+.user .user-card .social div:hover{
+    color:rgb(27, 189, 181);
+    transition-duration: 0.4s;
+}
+
+.user .user-card .user-text{
+    text-align: left;
+    margin-left: 10px;
+}
+
+.user .user-card .name{
+    margin: 5px 0;
+    font-size: min(1.65em, 3vw);
+    font-weight: 600;
+    line-height: 23px;
+    color: black;
+}
+
+.user .user-card .name a{
+    color: black;
+}
+
+.user .user-card .location{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+
+    font-size: min(1em, 1.8vw);
+}
+
+.user .git-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.user  .user-card img{
+    max-height: 100%;
+    border-radius: 15px;
+}
+
+.bottom{
+    border-radius: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+
+    width: 80%;
+    margin: auto;
+
+    font-size: 0.9em;
+}
+
+.bottom .repository-cards{
+    display: flex;
+    flex-flow: column;
+}
+
+.bottom .repository-cards .repository-header{
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.bottom .repository-cards .repository-header h1{
+    margin: 0;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    text-transform: lowercase;
+}
+
+.bottom .repository-card{
+    margin-bottom: 15px;
+}
+
+.bottom .no-repository{
+    text-transform: uppercase;
+    font-size: 1.6em;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+/* .repos-table .table-header, .repos-table .table-fields{
+    display: grid;
+    grid-template-columns: 20% 30% 50%;
+} */
+
+.bottom .repo-title{
+    font-size: 2em;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.bottom .repo-title span{
+    font-weight: 500;
+}
+
+.user .circle-1{
+    top: -100px;
+    left: -100px;
+    width: 400px;
+    height: 400px;
+}
+
+.user .circle-2{
+    top: 50px;
+    right: 2%;
+    width: 400px;
+    height: 400px;
+
+    animation-delay: 0.3s;
+}
+
+.user .circle-3{
+    bottom: 20px;
+    left: 10%;
+    width: 300px;
+    height: 300px;
+
+    animation-delay: 0.4s;
+}
+
+.user .circle-4{
+    bottom: -100px;
+    right: 20%;
+    width: 200px;
+    height: 200px;
+
+    animation-delay: 0.1s;
+}
+
+@keyframes show-card{
+    from{
+        transform: scaleX(0);
+    }
+    to{
+        transform: scaleX(1);
+    }
+}
+
+@keyframes slide-right{
+    from{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    from{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide{
+    from{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    from{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pop{
+    0%{
+        opacity: 1;
+        transform: scale(0); 
+    }
+    80%{
+        transform: scale(1.1);     
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1); 
+    }
+}

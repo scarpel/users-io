@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="430" height="430" viewBox="0 0 430 430">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="319.863" x2="110.137" y2="430" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#87f7e1"/>
+      <stop offset="0.821" stop-color="#00f4a1"/>
+      <stop offset="1" stop-color="#0eda94"/>
+    </linearGradient>
+  </defs>
+  <circle class="cls-1" cx="215" cy="215" r="215"/>
+</svg>

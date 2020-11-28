@@ -1,0 +1,57 @@
+.users-table{
+    position: relative;
+    padding: 0 15px;
+    box-sizing: border-box;
+    width: 100%;
+
+    z-index: 5;
+}
+
+.table-header, .table-fields{
+    display: grid;
+    grid-template-columns: 40px 1fr 2fr;
+    padding: 10px 15px;
+}
+
+.table-header{
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: lowercase;
+}
+
+.header.img{
+    font-size: 1.25em;
+}
+
+.table-fields{
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin-bottom: 10px;
+
+    font-size: 1.1em;
+    border-radius: 10px;
+
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.table-fields:focus{
+    outline: none;
+}
+
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img img{
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+}
+
+.login{
+    justify-self: flex-start;
+}

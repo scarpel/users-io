@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500.065" height="500.065" viewBox="0 0 1942 1942">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke-width: 53.8px;
+        stroke-dasharray: 215.2 107.6;
+        fill-rule: evenodd;
+        stroke: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="969.08" y1="1914" x2="969.08" y2="47.938" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#12f4aa"/>
+      <stop offset="1" stop-color="#12f4aa"/>
+    </linearGradient>
+  </defs>
+  <path class="cls-1" d="M969.071,47.929c515.319,0,933.069,417.734,933.069,933.035S1484.39,1914,969.071,1914,36,1496.27,36,980.964,453.75,47.929,969.071,47.929Z"/>
+</svg>

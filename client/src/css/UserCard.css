@@ -1,0 +1,84 @@
+.user-card{
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 150px;
+    height: 150px;
+    background-color: rgb(238, 238, 238);
+
+    padding: 20px 15px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+
+    color: black;
+}
+
+.user-card:focus{
+    outline: none;
+}
+
+.user-card:hover::after{
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    border-radius: 15px;
+    animation: shadow 0.25s ease-out forwards;
+}
+
+.user-card img{
+    max-width: 60%;
+    border-radius: 50%;
+}
+
+.user-card .id{
+    font-size: 0.9em;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: -8px;
+    margin-top: 5px;
+}
+
+.user-card .id.small{
+    font-size: 0.75em;
+}
+
+.user-card .login{
+    font-size: 1.25em;
+    margin: 5px auto;
+    max-width: 140px;
+
+    line-height: 21px;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+.user-card .login.small{
+    font-size: 1.1em;
+}
+
+.user-card .login.smaller{
+    font-size: 0.95em;
+}
+
+.user-card .git-link{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 5em;
+    display: none;
+}
+
+@keyframes shadow{
+    to{
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    }
+}

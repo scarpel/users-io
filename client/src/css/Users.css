@@ -1,0 +1,299 @@
+.users{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    margin: auto;
+
+    padding: 25px;
+    padding-bottom: 50px;
+
+    background-color: var(--background-main-color);
+    box-sizing: border-box;
+
+    z-index: 5;
+}
+
+.users #header{
+    width: 90%;
+    max-width: 800px;
+    padding: 20px 10px;
+    padding-left: 20px;
+    margin: auto;
+}
+
+.users *:focus{
+    outline: none;
+}
+
+.fields .spinner{
+    margin-top: 15px;
+}
+
+.users .users-table{
+    margin-top: -15px;
+}
+
+.users .name{
+    font-size: 2.5em;
+    text-transform: lowercase;
+    margin: 0;
+}
+
+.tray, .fields{
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.table-fields, .users-cards .user-card{
+    opacity: 0;
+    animation: show-up 0.5s ease-out forwards;
+}
+
+.table-fields{
+    text-decoration: none;
+    color: black;
+}
+
+.table-fields:hover{
+    background-color: rgba(0,0,0, 0.1);
+    transition-duration: 0.4s;
+}
+
+.users .tray{
+    position: relative;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 0px;
+    margin-bottom: 10px;
+    max-width: 770px;
+    width: 85%;
+}
+
+.users .directional-btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 1.1em;
+    width: 320px;
+    box-sizing: border-box;
+}
+
+.users .directional-btns button{
+    position: relative;
+    font-size: 0.7em;
+    letter-spacing: 2px;
+    font: "Poppins";
+    padding: 10px 20px;
+
+    text-transform: uppercase;
+    border: 1px solid black;
+    background-color: transparent;
+    border-radius: 2px;
+
+    z-index: 1;
+
+    cursor: pointer;
+
+    transition-duration: 0.4s;
+}
+
+.users .directional-btns button:disabled{
+    opacity: 0.25;
+    color: black;
+    transition-duration: 0.4s;
+
+    cursor: auto;
+}
+
+.users .directional-btns button:hover:disabled{
+    color: black;
+}
+
+.users .directional-btns button:hover:disabled::after{
+    display: none;
+}
+
+.users .directional-btns button:hover{
+    color: white;
+    transition-duration: 0.5s;
+    transition-delay: 0.25s;
+}
+
+.users .directional-btns .previous::after{
+    transform-origin: left;
+}
+
+.users .directional-btns .next::after{
+    transform-origin: right;
+}
+
+.users .directional-btns button:hover::after{
+    content: "";
+     
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    background-color: black;
+
+    z-index: -1;
+
+    animation: show-btn 0.5s ease-out;
+}
+
+.users .num-itens{
+    position: relative;
+    width: 200px;
+    text-transform: lowercase;
+    
+    z-index: 5;
+}
+
+.users .num-itens select{
+    font-family: "Poppins";
+
+    background-color: transparent;
+    text-decoration: underline;
+    border: none;
+    font-weight: 600;
+    font-size: 1em;
+
+    -webkit-appearance: none;
+
+    cursor: pointer;
+}
+
+.users .num-itens select:focus{
+    outline: none;
+}
+
+.users .num-itens select::-ms-expand{
+    display: none;
+}
+
+.users .display-type{
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 5;
+    padding: 0 10px;
+}
+
+.users .display-type label{
+    margin: 0;
+    margin-left: 15px;
+    margin-top: -20px;
+    cursor: pointer;
+}
+
+.users .display-type label:first-child{
+    margin-left: 0px;
+}
+
+.users .display-type input[type="radio"]{
+    opacity: 0;
+    width: 0;
+    margin: 0;
+}
+
+.users .display-type div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+    font-size: 1.4em;
+    margin: 0;
+    margin-top: -5px;
+}
+
+.users .display-type input[type="radio"]:checked + div{
+    background-color: black;
+    color: white;
+    transition-duration: 0.5s;
+}
+
+.users-cards{
+    position: relative;
+
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+
+    z-index: 5;
+}
+
+.user-card{
+    background-color: white;
+}
+
+.background{
+    z-index: 0;
+}
+
+.users .circle-1{
+    top: -100px;
+    left: 5%;
+    width: 500px;
+    height: 500px;
+}
+
+.users .circle-2{
+    top: -80px;
+    right: 2%;
+    width: 250px;
+    height: 250px;
+
+    animation-delay: 0.3s;
+}
+
+.users .circle-3{
+    bottom: -150px;
+    left: -5%;
+    width: 300px;
+    height: 300px;
+
+    animation-delay: 0.4s;
+}
+
+.users .circle-4{
+    bottom: 0px;
+    right: 22%;
+    width: 200px;
+    height: 200px;
+
+    animation-delay: 0.1s;
+}
+
+@keyframes show-up{
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes show-btn{
+    from{
+        transform: scaleX(0);
+    }
+    to{
+        transform: scaleX(1);
+    }
+}

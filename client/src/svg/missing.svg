@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="334" height="427" viewBox="0 0 334 427">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: url(#linear-gradient);
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 8.92px;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+        stroke: url(#linear-gradient-3);
+      }
+
+      .cls-3 {
+        font-size: 11.078px;
+        font-family: Poppins;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #12f4aa;
+      }
+
+      .cls-4 {
+        fill-rule: evenodd;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="167" y1="423" x2="167" y2="4" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#12f4aa"/>
+      <stop offset="1" stop-color="#33f5c9"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="170.5" y1="219" x2="170.5" y2="46" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#12f4aa"/>
+      <stop offset="1" stop-color="#34f5ca"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="170.5" y1="219" x2="170.5" y2="46" xlink:href="#linear-gradient"/>
+  </defs>
+  <rect id="Rounded_Rectangle_1" data-name="Rounded Rectangle 1" class="cls-1" x="8" y="4" width="318" height="419" rx="23" ry="23"/>
+  <circle class="cls-2" cx="170.5" cy="132.5" r="86.5"/>
+  <text id="MISSING" class="cls-3" transform="translate(49.098 307.244) scale(5.065)">MISSING</text>
+  <path class="cls-4" d="M51,342v-3H283v3H51Z"/>
+  <path id="Shape_1_copy" data-name="Shape 1 copy" class="cls-4" d="M51,367v-3H283v3H51Z"/>
+</svg>

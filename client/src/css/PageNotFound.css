@@ -1,0 +1,101 @@
+.page-not-found{
+    position: relative;
+
+    width: 100%;
+    min-height: 100vh;
+
+    background-color: var(--background-main-color);
+    box-sizing: border-box;
+}
+
+.page-not-found #header{
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.page-not-found main{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+
+    transform: translate(-50%,-50%);
+}
+
+.page-not-found main h1{
+    font-size: 2.5em;
+    margin: -5px 0;
+    letter-spacing: 1px;
+    opacity: 0;
+    animation: slide-up 0.5s ease-out forwards;
+}
+
+.page-not-found main p{
+    margin: 0;
+    letter-spacing: 0px;
+    opacity: 0;
+    animation: slide-up 0.5s ease-out 0.2s forwards;
+}
+
+.page-not-found .circle-1{
+    top: -200px;
+    right: 5%;
+    width: 500px;
+    height: 500px;
+}
+
+.page-not-found .circle-2{
+    top: -80px;
+    left: 2%;
+    width: 200px;
+    height: 200px;
+
+    animation-delay: 0.3s;
+}
+
+.page-not-found .circle-3{
+    bottom: -40px;
+    left: 10%;
+    width: 300px;
+    height: 300px;
+
+    animation-delay: 0.4s;
+}
+
+.page-not-found .circle-4{
+    bottom: -100px;
+    right: 1%;
+    width: 200px;
+    height: 200px;
+
+    animation-delay: 0.1s;
+}
+
+.page-not-found .missing{
+    width: 30%;
+    opacity: 0;
+    animation: slide-down 0.5s ease-out 0.3s forwards;
+}
+
+@keyframes slide-up{
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-down{
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,4 @@
+.circle-1, .circle-2, .circle-3, .circle-4{
+    opacity: 0;
+    animation: slide-up 1s ease-out forwards;
+}

@@ -1,0 +1,34 @@
+.info-field{
+    text-align: center;
+    font-size: min(0.9em, 1.2vw);
+
+    color: black;
+}
+
+.info-field .text, .name{
+    margin: 0;
+}
+
+.info-field .text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 45px;
+    font-weight: 400;
+    min-width: 50px;
+}
+
+.info-field .text.small{
+    font-size: 1.2em;
+}
+
+.info-field .text.smaller{
+    font-size: 1em;
+    background-color: crimson;
+}
+
+.info-field .name{
+    text-transform: lowercase;
+    cursor: auto;
+}
