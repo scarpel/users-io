@@ -15,6 +15,7 @@
     background-color: transparent;
     border: none;
     width: 200px;
+    color: black;
 }
 
 .search-bar input:focus, .search-bar button:focus{

@@ -72,7 +72,7 @@ function Users(){
         fetchUsers((obj) => {
             setIsLoading(false)
             handleNext(obj)
-        })
+        }, startIndexes.length>0? startIndexes[startIndexes.length-1][0]-1: 0)
     }, [numElements])
 
     const fetchUsers = (callback, since=0) => {
@@ -116,7 +116,6 @@ function Users(){
     }
 
     const handleChangeNumElements = ({target}) => {
-        startIndexes.pop()
         setNumElements(target.options[target.selectedIndex].value)
     }
 
@@ -127,7 +126,7 @@ function Users(){
                 <Header />
                 <div className="tray">
                     <div className="num-itens">
-                        Number of Itens:
+                        Number of Items:
                         <select onChange={handleChangeNumElements}>
                             <option onChange={handleChangeNumElements} value="10">10</option>
                             <option onChange={handleChangeNumElements} value="25">25</option>

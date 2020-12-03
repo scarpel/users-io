@@ -4,7 +4,7 @@ const fetch = require("node-fetch")
 
 const app = express()
 
-app.use(express.static(path.join(__dirname, "client", "build")))
+app.use(express.static(path.join(__dirname, "client/build")))
 
 function sendBadRequest(res, message="Invalid fields!"){
     res.status(400).send({message})
@@ -79,8 +79,8 @@ app.get("/api/*", (req, res) => {
     res.status(400).send({})
 })
 
-app.get("/*", (req, res) => {
-    res.sendFile(path.join(__dirname, "client", "build", "index.html"))
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client/build/index.html"))
 })
 
 const port = process.env.PORT || 5000

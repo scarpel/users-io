@@ -17,7 +17,7 @@ function PageNotFound(){
                     <p>
                         Wow, what happened?! I swear I saw it somewhere!
                         <br/>
-                        Well, I cound't find what you are looking for right now.
+                        Well, I coulnd't find what you are looking for right now.
                         <br/>
                         Try again later, please!
                     </p>
